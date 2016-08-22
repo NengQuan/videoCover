@@ -15,6 +15,9 @@
 		FBAF95061D25189A0085C5F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAF95041D25189A0085C5F6 /* LaunchScreen.storyboard */; };
 		FBAF95111D25189A0085C5F6 /* videoCoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAF95101D25189A0085C5F6 /* videoCoverTests.m */; };
 		FBAF951C1D25189A0085C5F6 /* videoCoverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAF951B1D25189A0085C5F6 /* videoCoverUITests.m */; };
+		FBAF952B1D251F380085C5F6 /* SliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAF952A1D251F380085C5F6 /* SliderView.m */; };
+		FBAF952F1D2523520085C5F6 /* VideoImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAF952D1D2523520085C5F6 /* VideoImageViewController.m */; };
+		FBAF95301D2523520085C5F6 /* VideoImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAF952E1D2523520085C5F6 /* VideoImageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		FBAF95171D25189A0085C5F6 /* videoCoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = videoCoverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBAF951B1D25189A0085C5F6 /* videoCoverUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = videoCoverUITests.m; sourceTree = "<group>"; };
 		FBAF951D1D25189A0085C5F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBAF95291D251F380085C5F6 /* SliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderView.h; sourceTree = "<group>"; };
+		FBAF952A1D251F380085C5F6 /* SliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderView.m; sourceTree = "<group>"; };
+		FBAF952C1D2523520085C5F6 /* VideoImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoImageViewController.h; sourceTree = "<group>"; };
+		FBAF952D1D2523520085C5F6 /* VideoImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoImageViewController.m; sourceTree = "<group>"; };
+		FBAF952E1D2523520085C5F6 /* VideoImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoImageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,8 @@
 		FBAF94F51D25189A0085C5F6 /* videoCover */ = {
 			isa = PBXGroup;
 			children = (
+				FBAF95291D251F380085C5F6 /* SliderView.h */,
+				FBAF952A1D251F380085C5F6 /* SliderView.m */,
 				FBAF94F91D25189A0085C5F6 /* AppDelegate.h */,
 				FBAF94FA1D25189A0085C5F6 /* AppDelegate.m */,
 				FBAF94FC1D25189A0085C5F6 /* ViewController.h */,
@@ -110,6 +120,9 @@
 				FBAF95041D25189A0085C5F6 /* LaunchScreen.storyboard */,
 				FBAF95071D25189A0085C5F6 /* Info.plist */,
 				FBAF94F61D25189A0085C5F6 /* Supporting Files */,
+				FBAF952C1D2523520085C5F6 /* VideoImageViewController.h */,
+				FBAF952D1D2523520085C5F6 /* VideoImageViewController.m */,
+				FBAF952E1D2523520085C5F6 /* VideoImageViewController.xib */,
 			);
 			path = videoCover;
 			sourceTree = "<group>";
@@ -245,6 +258,7 @@
 			files = (
 				FBAF95061D25189A0085C5F6 /* LaunchScreen.storyboard in Resources */,
 				FBAF95031D25189A0085C5F6 /* Assets.xcassets in Resources */,
+				FBAF95301D2523520085C5F6 /* VideoImageViewController.xib in Resources */,
 				FBAF95011D25189A0085C5F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBAF952F1D2523520085C5F6 /* VideoImageViewController.m in Sources */,
 				FBAF94FE1D25189A0085C5F6 /* ViewController.m in Sources */,
+				FBAF952B1D251F380085C5F6 /* SliderView.m in Sources */,
 				FBAF94FB1D25189A0085C5F6 /* AppDelegate.m in Sources */,
 				FBAF94F81D25189A0085C5F6 /* main.m in Sources */,
 			);

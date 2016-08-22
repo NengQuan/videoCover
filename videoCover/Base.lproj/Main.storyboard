@@ -1,25 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hx8-mT-4wf">
+                                <rect key="frame" x="137" y="30" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Nu3-0Z-XgU"/>
+                                    <constraint firstAttribute="height" constant="30" id="oCv-49-G13"/>
+                                </constraints>
+                                <state key="normal" title="选取视频"/>
+                                <connections>
+                                    <action selector="selectVideoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I9X-eC-DFg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oJr-db-1yC">
+                                <rect key="frame" x="0.0" y="90" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="dzn-h9-lC4"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dg2-y7-IgR">
+                                <rect key="frame" x="20" y="440" width="335" height="50"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bkD-nz-XkF"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42e-Xw-1XE">
+                                <rect key="frame" x="319" y="30" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="VI1-pK-hNq"/>
+                                    <constraint firstAttribute="height" constant="30" id="idn-4M-Kbg"/>
+                                </constraints>
+                                <state key="normal" title="下一步"/>
+                                <connections>
+                                    <action selector="nextStepAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ei-ZC-lhW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="42e-Xw-1XE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2gr-YC-bA1"/>
+                            <constraint firstItem="oJr-db-1yC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IxX-3O-KFs"/>
+                            <constraint firstItem="42e-Xw-1XE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="Plx-SC-HeR"/>
+                            <constraint firstAttribute="trailing" secondItem="Dg2-y7-IgR" secondAttribute="trailing" constant="20" id="RQx-bg-RCW"/>
+                            <constraint firstItem="Dg2-y7-IgR" firstAttribute="top" secondItem="oJr-db-1yC" secondAttribute="bottom" constant="50" id="U9Y-uF-mPG"/>
+                            <constraint firstItem="Dg2-y7-IgR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="acf-Va-A0n"/>
+                            <constraint firstItem="Hx8-mT-4wf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gRP-3F-4nB"/>
+                            <constraint firstAttribute="trailing" secondItem="oJr-db-1yC" secondAttribute="trailing" id="lp1-Eh-CLP"/>
+                            <constraint firstItem="oJr-db-1yC" firstAttribute="top" secondItem="Hx8-mT-4wf" secondAttribute="bottom" constant="30" id="qd7-ws-7B4"/>
+                            <constraint firstAttribute="trailing" secondItem="42e-Xw-1XE" secondAttribute="trailing" constant="10" id="sEg-pu-hdZ"/>
+                            <constraint firstItem="Hx8-mT-4wf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="zp9-pA-LY1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2gr-YC-bA1"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bottomImageView" destination="Dg2-y7-IgR" id="mef-A1-mH6"/>
+                        <outlet property="videoDisplayView" destination="oJr-db-1yC" id="sNb-4Z-qql"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="156.5" y="357.5"/>
         </scene>
     </scenes>
 </document>

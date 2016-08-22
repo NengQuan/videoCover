@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoImageViewController">
+            <connections>
+                <outlet property="imageView" destination="vP5-aZ-bUv" id="ER8-ku-BV2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vP5-aZ-bUv">
+                    <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="2we-P9-C8T"/>
+                        <constraint firstAttribute="height" constant="300" id="XTs-fR-fDG"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDw-NM-4NU">
+                    <rect key="frame" x="164" y="21" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="PNE-hF-OHs"/>
+                        <constraint firstAttribute="height" constant="30" id="Pr9-if-0Pn"/>
+                    </constraints>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="dimissAction:" destination="-1" eventType="touchUpInside" id="Fsi-Eb-2S9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IDw-NM-4NU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="21" id="1mV-kF-LSS"/>
+                <constraint firstItem="IDw-NM-4NU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LsD-d9-LVN"/>
+                <constraint firstItem="vP5-aZ-bUv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fns-C8-uvU"/>
+                <constraint firstItem="vP5-aZ-bUv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sAm-xh-c0c"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="322.5" y="292.5"/>
+        </view>
+    </objects>
+</document>
